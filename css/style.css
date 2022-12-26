@@ -72,6 +72,7 @@ img {
   background-color: #404bbf;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -121,7 +122,6 @@ a {
   transition-duration: 250ms;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: var(--animation-fast);
 }
 
 .curent {
@@ -138,6 +138,7 @@ a {
   bottom: -24px;
   left: 0;
   background-color: #404bbf;
+  visibility: inherit;
 }
 
 .contacts:hover,
@@ -156,7 +157,6 @@ a {
   transition-duration: 250ms;
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: var(--animation-fast);
 }
 
 .contacts-link li:not(:last-child) {
@@ -206,7 +206,6 @@ a {
   transition-property: box-shadow;
   transition-duration: var(--animationgoit-duration);
   transition-timing-function: var(--transition-timing-function-goit) ;
-  transition-delay: var(--animation-fast);
 }
 
 .header-btn:hover,
@@ -399,10 +398,9 @@ a {
   justify-content: center;
   align-items: center;
   fill: #8e8f99;
-  transition-property: fill;
+  transition-property: fill, border-color;
   transition-duration: var(--animationgoit-duration);
   transition-timing-function: var(--transition-timing-function-goit);
-  transition-delay: var(--animation-fast);
 }
 
 .logolist:hover,
@@ -412,10 +410,9 @@ a {
 
 .logolistsitem {
   fill: #8e8f99;
-  transition-property: fill;
+  transition-property: fill, border-color;
   transition-duration: var(--animationgoit-duration);
   transition-timing-function: var(--transition-timing-function-goit);
-  transition-delay: var(--animation-fast);
 }
 
 .logolist:hover .logolistsitem {
@@ -488,7 +485,6 @@ a {
   transition-property: background-color;
   transition-duration: var(--animationgoit-duration);
   transition-timing-function: var(--transition-timing-function-goit);
-  transition-delay: var(--animation-fast);
 }
 
 .soclistfootera:not(:last-child) {
@@ -610,7 +606,6 @@ a {
   transition-property: box-shadow, background-color, color, border-color;
   transition-duration: var(--animationgoit-duration);
   transition-timing-function: var(--transition-timing-function-goit);
-  transition-delay: var(--animation-fast);
 }
 
 .filter-button:hover,
@@ -655,7 +650,6 @@ ul {
   transition-property: transform;
   transition-duration: var(--animationgoit-duration);
   transition-timing-function: var(--transition-timing-function-goit);
-  transition-delay: var(--animation-fast);
 }
 
 .galerrry {
@@ -685,7 +679,6 @@ ul {
   transition-property: box-shadow;
   transition-duration: var(--animationgoit-duration);
   transition-timing-function: var(--transition-timing-function-goit);
-  transition-delay: var(--animation-fast);
 }
 
 .rowlink:hover,

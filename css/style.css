@@ -533,7 +533,7 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   width: 264px;
   height: 40px;
-  background-color: var(--h2h3-header-footer-color);
+  background-color: transparent;
   padding-left: 16px;
   margin-right: 24px;
 }
@@ -591,6 +591,7 @@ input::placeholder {
   width: 408px;
   min-height: 576px;
   background: #fcfcfc;
+  padding: 72px 24px 24px 24px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -611,15 +612,103 @@ input::placeholder {
   cursor: pointer;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-property: background-color, boder;
+  transition-duration: var(--animationgoit-duration);
+  transition-timing-function: var(--transition-timing-function-goit);
+}
+
+.modalbtn:hover,
+.modalbtn:focus{
+  background: #404BBF;
+  border-color: var(--brand-primary-color);
+}
+
+.modalbtn:hover .modal-close-icon{
+  fill: #FFFFFF;
 }
 
 .modal-close-icon {
   fill: rgba(0, 0, 0, 1);
+  transition-property: fill;
+  transition-duration: var(--animationgoit-duration);
+  transition-timing-function: var(--transition-timing-function-goit);
+}
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  fill: #FFFFFF;
 }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -70%);
   opacity: 0;
+}
+
+.registration-form{
+
+}
+
+.modal-title{
+  display: block;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+    color: var(--h2h3-header-footer-color);
+}
+
+.registration-form-group{
+
+}
+
+.registration-form-field{
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.registration-form-label{
+  display: block;
+  margin-bottom: 4px;
+  left: 0;
+  color: #8E8F99;
+  letter-spacing: 0.01em;
+  font-size: 12px;
+}
+
+.registration-form-input{
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  background-color: transparent;
+  border-radius: 6px;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: outline, border;
+  transition-duration: var(--animationgoit-duration);
+  transition-timing-function: var(--transition-timing-function-goit);
+}
+
+.registration-form-input:focus {
+  outline-color: var(--brand-primary-color)
+}
+
+.registration-form-icon{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  fill: rgba(46, 47, 66, 1);
+  transition-property: fill;
+  transition-duration: var(--animationgoit-duration);
+  transition-timing-function: var(--transition-timing-function-goit);
+}
+
+.registration-form-input:focus+.registration-form-icon {
+  fill: var(--brand-primary-color);
 }
 
 /* Portfolio  Page*/

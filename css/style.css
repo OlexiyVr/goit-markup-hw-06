@@ -164,10 +164,8 @@ a {
 /* HERO SECTION */
 
 .hero {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 00.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 00.7)),
     url(../img/hbkg.jpg);
   flex-grow: 1;
   background-repeat: no-repeat;
@@ -444,8 +442,9 @@ a {
   display: flex;
 }
 
-.footerboxes:not(:last-child) {
-  margin-right: 120px;
+.soclistftoneboll{
+  margin-left: 120px;
+  margin-right: 80px;
 }
 
 .logo-link-footer {
@@ -505,10 +504,6 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form {
-  margin-left: -40px;
-}
-
 .footerformtitle {
   font-size: 16px;
   line-height: 1.5;
@@ -526,7 +521,7 @@ input::placeholder {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 2;
   align-items: center;
   letter-spacing: 0.04em;
@@ -622,12 +617,12 @@ input::placeholder {
 }
 
 .modalbtn:hover,
-.modalbtn:focus{
+.modalbtn:focus {
   background: #404BBF;
   border-color: var(--brand-primary-color);
 }
 
-.modalbtn:hover .modal-close-icon{
+.modalbtn:hover .modal-close-icon {
   fill: #FFFFFF;
 }
 
@@ -648,11 +643,7 @@ input::placeholder {
   opacity: 0;
 }
 
-.registration-form{
-
-}
-
-.modal-title{
+.modal-title {
   display: block;
   margin-bottom: 16px;
   text-align: center;
@@ -660,20 +651,16 @@ input::placeholder {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-    color: var(--h2h3-header-footer-color);
+  color: var(--h2h3-header-footer-color);
 }
 
-.registration-form-group{
-
-}
-
-.registration-form-field{
-  position: relative;
+.registration-form-field {
   display: block;
-  margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 8px;
 }
 
-.registration-form-label{
+.registration-form-label {
   display: block;
   margin-bottom: 4px;
   left: 0;
@@ -682,11 +669,11 @@ input::placeholder {
   font-size: 12px;
 }
 
-.registration-form-input{
+.registration-form-input {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  
+
   width: 100%;
   height: 40px;
   padding-left: 38px;
@@ -704,7 +691,7 @@ input::placeholder {
   outline-color: var(--brand-primary-color)
 }
 
-.registration-form-icon{
+.registration-form-icon {
   position: absolute;
   bottom: 8px;
   left: 16px;
@@ -714,7 +701,7 @@ input::placeholder {
   transition-timing-function: var(--transition-timing-function-goit);
 }
 
-.registration-form-message{
+.registration-form-message {
   width: 100%;
   height: 120px;
   resize: none;
@@ -731,8 +718,21 @@ input::placeholder {
   transition-timing-function: var(--transition-timing-function-goit);
 }
 
+.registration-form-message::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  letter-spacing: 0.04em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .registration-form-input:focus+.registration-form-icon {
   fill: var(--brand-primary-color);
+  border-color: var(--brand-primary-color);
 }
 
 /* checkbox */
@@ -766,8 +766,8 @@ input::placeholder {
   background-position: center;
 
   background-color: #404bbf;
-  border: transparent;
-  
+  border-color:var(--brand-primary-color);
+
 }
 
 .registration-form-text {
